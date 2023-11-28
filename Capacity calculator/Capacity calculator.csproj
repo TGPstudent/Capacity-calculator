@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BBA51353-9611-42C8-AB1E-82B801BD7BA9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Capacity_calculator</RootNamespace>
+    <AssemblyName>Capacity calculator</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>calculator.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Aspose.Words, Version=23.5.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Words.23.5.0\lib\net461\Aspose.Words.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Aspose.Words.Pdf2Word, Version=23.5.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Words.23.5.0\lib\net461\Aspose.Words.Pdf2Word.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Winform.Metroframework.1.4.0\lib\net20\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroFramework.Design.1.2.0.3\lib\net40\MetroFramework.Design.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroFramework.Fonts.1.2.0.3\lib\net40\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Archive.cs" />
+    <Compile Include="CustomMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFirst.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFirst.Designer.cs">
+      <DependentUpon>FormFirst.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormArchive.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormArchive.Designer.cs">
+      <DependentUpon>FormArchive.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTank1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTank1.Designer.cs">
+      <DependentUpon>FormTank1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTank2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTank2.Designer.cs">
+      <DependentUpon>FormTank2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTank3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTank3.Designer.cs">
+      <DependentUpon>FormTank3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTank4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTank4.Designer.cs">
+      <DependentUpon>FormTank4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTank5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTank5.Designer.cs">
+      <DependentUpon>FormTank5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTank6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTank6.Designer.cs">
+      <DependentUpon>FormTank6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Info.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Info.Designer.cs">
+      <DependentUpon>Form_Info.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tank1.cs" />
+    <Compile Include="Tank2.cs" />
+    <Compile Include="Tank3.cs" />
+    <Compile Include="Tank4.cs" />
+    <Compile Include="Tank5.cs" />
+    <Compile Include="Tank6.cs" />
+    <EmbeddedResource Include="FormFirst.resx">
+      <DependentUpon>FormFirst.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormArchive.resx">
+      <DependentUpon>FormArchive.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTank1.resx">
+      <DependentUpon>FormTank1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTank2.resx">
+      <DependentUpon>FormTank2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTank3.resx">
+      <DependentUpon>FormTank3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTank4.resx">
+      <DependentUpon>FormTank4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTank5.resx">
+      <DependentUpon>FormTank5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTank6.resx">
+      <DependentUpon>FormTank6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Info.resx">
+      <DependentUpon>Form_Info.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ico_calc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tank1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tank2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tank3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tank4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tank5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tank6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tank11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tank22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tank33.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tank44.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tank55.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tank66.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\33.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\44.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="calculator.ico" />
+    <Content Include="MetroFramework.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
